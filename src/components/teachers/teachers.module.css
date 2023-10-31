@@ -1,0 +1,81 @@
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    overflow: hidden;
+    position: relative;
+    background: var(--white);
+    
+}
+
+.cardsContainer {
+    /* animation: card-animation 18s infinite; */
+    transform: translateX(-2%);
+}
+
+@keyframes card-animation {
+    0% { transform: translateX(-2%); }
+    25% { transform: translateX(97%); }
+    50% { transform: translateX(196%); }
+    75% { transform: translateX(97%); }
+    100% { transform: translateX(-2%); }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 0.6rem;
+    color: var(--white);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.titleContainer {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.titleContainer::after { 
+    content: '';
+    position: absolute;
+    bottom: -1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 0.3rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dot {
+    background-color: var(--gray-80);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%; 
+}
+
+.dot.active {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--blue);
+}

@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    background: url('../../images/footer-bg.svg') no-repeat;
+    background-size: cover;
+    padding: 3rem 6rem;
+}
+
+.logo {
+   display: grid;
+   place-items: center;
+}
+
+.link, .text {
+    color: var(--gray-70);
+}
+
+.text {
+    width: 22rem;
+    line-height: 1.8rem;
+}
+
+.link.active {
+    color: var(--blue-60);
+}
+
+.title {
+    color: var(--blue);
+    padding-right: 20px;
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: var(--blue);
+}

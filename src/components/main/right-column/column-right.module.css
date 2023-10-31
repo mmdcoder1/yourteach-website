@@ -1,0 +1,45 @@
+.title {
+    font-family: peyda;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.text {
+    color: var(--gray-80);
+    width: 30rem;
+    line-height: 1.7rem;
+    font-family: peyda;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.statusContainer {
+    font-family: peyda;
+    margin-top: 10rem;
+    border-bottom: 1px solid var(--gray-50);
+    width: fit-content;
+    padding-bottom: 10px;
+}
+
+.statusTitle {
+   font-size: 2rem;
+   margin-bottom: 0.1rem;
+}
+
+.statusText {
+    color: var(--gray-80);
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .statusContainer {
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .text {
+        width: 100%;
+    }
+}

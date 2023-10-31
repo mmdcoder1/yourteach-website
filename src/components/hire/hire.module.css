@@ -1,0 +1,25 @@
+.containerIN {
+    background: var(--blue);
+    color: var(--white);
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.leftCol { flex-basis: 50%; width: 100%; }
+.rightCol { flex-basis: 50%; width: 100%; }
+.text {
+    line-height: 1.7rem;
+}
+.image {
+    position: absolute;
+    left: 5rem;
+    top: -2.8rem;
+}
+
+@media (max-width: 1200px){
+    .containerIN {
+        flex-direction: column-reverse;
+    }  
+    /* .image { position: relative; } */
+}

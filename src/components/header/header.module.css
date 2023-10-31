@@ -1,0 +1,27 @@
+.container {width: 100%; }
+
+.link {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.mediaSection {
+    width: 100%;
+    display: none;
+}
+
+
+.section {
+    width: 100%;
+}
+
+.loginLink {
+    color: var(--black);
+}
+
+/* media */
+@media (max-width: 1200px) {
+    .section { display: none; }
+    .mediaSection { display: flex; }
+}
